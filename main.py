@@ -19,7 +19,6 @@ model_eco = joblib.load('eco_model.joblib')
 
 @app.route('/', methods=['GET'])
 def hello():
-
     return jsonify("hello world")
 
 @app.route('/predict-poverty', methods=['POST'])
